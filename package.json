@@ -1,0 +1,41 @@
+{
+  "name": "seed",
+  "version": "0.0.0",
+  "description": "Seed project for MEAN",
+  "main": "server.js",
+    "scripts": {
+        "start": "supervisor server.js",
+        "mongo": "mongod --config db/mongo.conf",
+        "mongo-repair": "mongod --dbpath db/mongo_data --repair",
+        "test": "grunt test"
+    },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "underscore": "~1.6.0",
+    "async": "~0.2.10",
+    "shortid": "~2.0.0",
+    "moment": "~2.5.1",
+    "express-namespace": "~0.1.1",
+    "express-resource-new": "~0.1.1",
+    "passport-local": "~1.0.0",
+    "passport": "~0.2.0",
+    "stylus": "~0.42.3",
+    "socket.io": "~0.9.16",
+    "jade": "~1.3.0",
+    "connect-mongo": "~0.4.0",
+    "mongoose": "~3.8.8",
+    "express": "~3.5.0",
+    "slug": "~0.4.2"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-compass": "~0.7.2",
+    "grunt-contrib-watch": "~0.6.1",
+    "matchdep": "~0.3.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-cssmin": "~0.7.0"
+  }
+}

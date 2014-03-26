@@ -1,0 +1,13 @@
+doctype
+html
+    head
+        block title
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(href="/bower_components/open-sans/css/open-sans.min.css", rel="stylesheet")
+        link(href="/bower_components/bootstrap/dist/css/bootstrap.min.css", rel="stylesheet")
+        link(href="/bower_components/toastr/toastr.min.css", rel="stylesheet")
+        link(href="src/styles/main.css", rel="stylesheet")
+    body(ng-app="ngApp")
+        include currentUser
+        block main-content
+        include scripts

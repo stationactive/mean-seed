@@ -1,0 +1,14 @@
+.container
+    form(name="LoginForm")
+        fieldset
+            legend Sign In
+            .form-group
+                label.control-label(for="username") Username
+                input.form-control(name="username", placeholder="username", ng-model="username")
+            .form-group
+                label.control-label(for="password") Password
+                input.form-control(type="password", name="password", placeholder="password",ng-model="password")
+            .form-group
+                button.btn.btn-primary(ng-click="login(username, password)") Sign In
+
+
